@@ -1,0 +1,15 @@
+[package]
+authors = ["Mick Sayson <mick@sayson.com>"]
+name = "giphy"
+version = "0.1.0"
+
+[dependencies]
+futures = "0.1.14"
+hyper = "0.11.0"
+lazy_static = "0.2.8"
+newtype_derive = "0.1.6"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+serde_json = "1.0.2"
+tokio-core = "0.1.8"
+url = "1.5.0"
