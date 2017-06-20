@@ -13,15 +13,16 @@ extern crate newtype_derive;
 
 mod giphy_types;
 
-pub use futures::Future;
+pub use giphy_types::SearchResults;
 
 use futures::Stream;
-use giphy_types::SearchResults;
 use hyper::client::HttpConnector;
 use hyper::{Client, Uri};
 use std::convert::From;
 use std::str::FromStr;
 use url::Url;
+use futures::Future;
+
 
 lazy_static! {
     static ref GIPHY_URI: Url = Url::parse("http://api.giphy.com/").expect("Failed to parse Giphy URL (should never happen)");
